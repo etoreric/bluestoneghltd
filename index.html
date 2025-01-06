@@ -528,8 +528,7 @@
     <div class="row gy-4 gy-md-5 gy-lg-0 align-items-md-center">
       <div class="col-12 col-lg-6">
         <div class="reveal fade-left">
-          <form action="https://formspree.io/f/mbllpzjn" method="POST" 
-           id="contactForm" onsubmit="submitForm(event)"
+          <form id="myForm" action="https://formspree.io/f/mbllpzjn" method="POST" 
            >
             <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
               <div class="col-12">
@@ -667,12 +666,13 @@
 </footer>
 
 
-<script>
-        function submitForm(event) {
-            event.preventDefault(); // Prevent the default form submission
-            alert('Form submitted successfully!'); // Show a confirmation message
-            document.getElementById('contactForm').reset(); // Clear the form fields
-        }
+   <script>
+        const form = document.getElementById('myForm');
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevents the default form submission
+            alert('Form submitted!'); // Add your form submission logic here
+            form.reset(); // Clears the form
+        });
     </script>
 
 
