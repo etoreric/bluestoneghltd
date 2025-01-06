@@ -108,13 +108,11 @@
 
 
 
-
-
 <!--------------Contact---------------->
 
-<section class="py-5 py-md-5 py-xl-8">
+<section class="py-3 py-md-5 py-xl-8">
   <div class="container">
-    <div class="col-12 text-center">
+    <div class="col-12 text-center reveal fade-bottom">
       <h1 class="display-4">Contact Us</h1>
       <p class="lead">
         We would love to hear from you. Please get in touch in one of the following ways.. 
@@ -125,8 +123,10 @@
   <div class="container">
     <div class="row gy-4 gy-md-5 gy-lg-0 align-items-md-center">
       <div class="col-12 col-lg-6">
-        <div class="">
-          <form action="#!">
+        <div class="reveal fade-left">
+         <div class="border overflow-hidden">
+          <form id="contactForm" action="https://formspree.io/f/mbllpzjn" method="POST" 
+           >
             <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
               <div class="col-12">
                 <label for="fullname" class="form-label">Full Name <span class="text-danger">*</span></label>
@@ -145,10 +145,6 @@
                 </div>
               </div>
               <div class="col-12">
-                <label for="subject" class="form-label">Subject <span class="text-danger">*</span></label>
-                <input type="text" class="form-control" id="subject" name="subject" value="" required>
-              </div>
-              <div class="col-12">
                 <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
                 <textarea class="form-control" id="message" name="message" rows="3" required></textarea>
               </div>
@@ -160,10 +156,12 @@
               </div>
             </div>
           </form>
-
+         </div>
+           <p id="successMessage" style="display: none; color: green;">Thank you! Your message has been sent.</p>
+         
         </div>
       </div>
-      <div class="col-12 col-lg-6">
+      <div class="col-12 col-lg-6 reveal fade-right">
         <div class="row justify-content-xl-center">
           <div class="col-12 col-xl-11">
             <div class="mb-4 mb-md-5">
@@ -184,7 +182,7 @@
                     <p class="mb-2">Please speak with our correspondant.</p>
                     <hr class="w-75 mb-3 border-dark-subtle">
                     <p class="mb-0">
-                      <a class="link-primary text-decoration-none" href="tel:+15057922430">(024) 792-2430</a>
+                      <a class="link-primary text-decoration-none" href="tel:+233244086040">(024) 408-6040</a>
                     </p>
                   </div>
                 </div>
@@ -197,11 +195,7 @@
                     <hr class="w-50 mb-3 border-dark-subtle">
                     <div class="d-flex mb-1">
                       <p class="text-secondary fw-bold mb-0 me-5">Mon - Fri</p>
-                      <p class="text-secondary mb-0">9am - 5pm</p>
-                    </div>
-                    <div class="d-flex">
-                      <p class="text-secondary fw-bold mb-0 me-5">Sat - Sun</p>
-                      <p class="text-secondary mb-0">9am - 2pm</p>
+                      <p class="text-secondary mb-0">8am - 5pm</p>
                     </div>
                   </div>
                 </div>
@@ -215,7 +209,6 @@
     </div>
   </div>
 </section>
-
 
 
 
