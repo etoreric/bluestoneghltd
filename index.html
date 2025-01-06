@@ -528,7 +528,7 @@
     <div class="row gy-4 gy-md-5 gy-lg-0 align-items-md-center">
       <div class="col-12 col-lg-6">
         <div class="reveal fade-left">
-          <form action="#!">
+          <form id="contactForm" onsubmit="submitForm(event)" action="https://formspree.io/f/xvggvwoy" method="POST">
             <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
               <div class="col-12">
                 <label for="fullname" class="form-label">Full Name <span class="text-danger">*</span></label>
@@ -545,10 +545,6 @@
                 <div class="input-group">
                   <input type="tel" class="form-control" id="phone" name="phone" value="">
                 </div>
-              </div>
-              <div class="col-12">
-                <label for="subject" class="form-label">Subject <span class="text-danger">*</span></label>
-                <input type="text" class="form-control" id="subject" name="subject" value="" required>
               </div>
               <div class="col-12">
                 <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
@@ -669,7 +665,13 @@
 </footer>
 
 
-
+<script>
+        function submitForm(event) {
+            event.preventDefault(); // Prevent the default form submission
+            alert('Form submitted successfully!'); // Show a confirmation message
+            document.getElementById('contactForm').reset(); // Clear the form fields
+        }
+    </script>
 
 
   <!-- Custom Script to show navbar black background after scrolling 100vh -->
