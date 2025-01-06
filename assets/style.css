@@ -221,7 +221,30 @@ body.text-light {
 
 
 
+.ceo-section {
+            padding: 60px 20px;
+        }
 
+        .ceo-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .ceo-message {
+            color: #333;
+        }
+
+        .ceo-name {
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin-top: 20px;
+        }
+
+        .ceo-title {
+            color: #6c757d; /* Bootstrap muted text color */
+        }
 
 
 /*--------------pre-loader---------------*/
