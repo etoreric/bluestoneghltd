@@ -693,6 +693,23 @@
 
 
 
+ <!-- Custom JavaScript to close navbar on refresh -->
+<script>
+  // Close the navbar when the page is loaded
+  document.addEventListener('DOMContentLoaded', function() {
+      var navbarToggler = document.querySelector('.navbar-toggle');
+      var navbarCollapse = document.querySelector('.icon-burger');
+
+      if (navbarToggler && navbarCollapse) {
+          navbarCollapse.classList.remove('show');
+      }
+  });
+</script>
+
+
+ 
+
+
  <script>
         const form = document.getElementById('contactForm');
         const successMessage = document.getElementById('successMessage');
