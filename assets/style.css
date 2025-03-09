@@ -370,13 +370,13 @@ nav .icon-burger .line {
 /* Styling the carousel container */
 .carousel-item {
   position: relative;
-  height: 100vh;
+  height: 90vh;
 }
 
 .carousel-item img {
   object-fit: cover;
   width: 100%;
-  height: 100%;
+  height: 90%;
   filter: brightness(70%);
   transition: opacity 1s ease-in-out; /* Smooth transition effect */
 }
@@ -395,14 +395,14 @@ nav .icon-burger .line {
  /* Responsive images */
   @media (max-width: 768px) {
   .carousel-item img {
-    height: 60vh;
+    height: 90vh;
     object-fit: cover;
   }
   }
 
   @media (max-width: 480px) {
   .carousel-item img {
-    height: 50vh;
+    height: 90vh;
     object-fit: cover;
   }
   }
