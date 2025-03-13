@@ -370,13 +370,13 @@ nav .icon-burger .line {
 /* Styling the carousel container */
 .carousel-item {
   position: relative;
-  height: 90vh;
+  height: 100vh;
 }
 
 .carousel-item img {
   object-fit: cover;
   width: 100%;
-  height: 90%;
+  height: 100%;
   filter: brightness(70%);
   transition: opacity 1s ease-in-out; /* Smooth transition effect */
 }
