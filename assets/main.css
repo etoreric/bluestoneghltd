@@ -598,11 +598,19 @@
         }
 
 
-        .card {
+      .card {
         transition: transform 0.3s ease;
+        margin: 2rem !important; /* Added margin around the card */
     }
     
     .card:hover {
         transform: translateY(-5px);
         box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Ensure image displays properly on mobile */
+    @media (max-width: 768px) {
+        .col-md-4 {
+            height: 200px; /* Fixed height for mobile image */
+        }
     }
